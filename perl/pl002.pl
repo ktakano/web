@@ -1,11 +1,11 @@
-#!"C:¥xampp¥perl¥bin¥perl.exe“
+#!"C:\xampp\perl\bin\perl.exe"
 
 readFormData();
 
 print "Content-type: text/html\n\n";
 print '<html>';
 print '<head>';
-print '<meta charset=UTF-8">';
+print '<meta charset="UTF-8">';
 print '</head>';
 print "<body><h1>";
 print "ID: " . $FORM{"my_login"};
