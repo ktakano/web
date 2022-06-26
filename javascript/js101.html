@@ -1,0 +1,28 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script type=text/javascript>
+function inputCheck() {
+	var str = document.getElementById("myname").value;
+	if (!str) {
+		console.log("値が入力されていません．")
+		document.getElementById("message").innerHTML = "値が入力されていません．";
+	} else {
+		document.getElementById("message").innerHTML = "OK";
+	}
+	return;
+}
+</script>
+</head>
+
+<body>
+<form action="pl004.pl" method="get">
+名前は必ず入力してください。<br>
+  名前: <input type="text" id="myname" value="" size=40>
+  <input type="button" id="check" value="チェック" onClick="inputCheck();">
+</form>
+
+<div id="message" style="color: red"></div>
+
+</body>    
+</html>
